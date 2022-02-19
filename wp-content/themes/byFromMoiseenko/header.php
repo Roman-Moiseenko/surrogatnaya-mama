@@ -1,12 +1,8 @@
 <?php
 /**
  * The Header template for our theme
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package WordPress
- * @subpackage BadJohnny
- * @since BadJohnny 1.0
+  * Displays all of the <head> section and everything up till <div id="main">
+  * @package WordPress
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>

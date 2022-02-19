@@ -1,9 +1,7 @@
 <?php
 /**
- * The main template file
+ * Старт блога
  * @package WordPress
- * @subpackage BadJohnny
- * @since BadJohnny 1.0
  */
 
 get_header(); ?>
