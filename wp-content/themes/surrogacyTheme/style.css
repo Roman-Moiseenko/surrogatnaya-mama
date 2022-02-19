@@ -1,10 +1,10 @@
 /*
 Theme Name: SurrogacyTheme
-Theme URI: http://www.themevan.com/item/badjohnny
+Theme URI: http://www.koenigs.ru
 Author: ThemeVan
 Author URI: http://www.koenigs.ru
 Description:  This theme is a redesigned version of Twenty Twelve theme which is created by the WordPress team.
-Version: 10.1
+Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
@@ -14,11 +14,6 @@ Text Domain: SurrogacyTheme
 This theme is modified from Twenty Twelve theme which is created by the WordPress team.
 */
 
-
-
-/*
- * I don't suggest you to modify any theme files directly, because you will not able to upgrade the theme smoothly. The best solution is create a child theme for your custom needs, if you only need to modify some CSS, you can install the third-party plugins for add custom CSS.
-*/
 
 
 /* Google Fonts */
@@ -563,6 +558,7 @@ a:hover {
 
 /* Header */
 .site-header {
+	text-align: center;
 	padding-top: 6px;
 	background: var(--one-color);
 }
