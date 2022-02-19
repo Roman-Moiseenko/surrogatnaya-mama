@@ -35,14 +35,7 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<?php 
-			if(is_home()){
-			  echo badjohnny_seo_wrapper('h1 class="site-title"','<a href="'.esc_url( home_url( '/' ) ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a>');
-			}else{
-			  echo badjohnny_seo_wrapper('h3 class="site-title"','<a href="'.esc_url( home_url( '/' ) ).'" title="'.esc_attr( get_bloginfo( 'name', 'display' ) ).'" rel="home">'.get_bloginfo( 'name' ).'</a>');
-			}
-			?>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+            Логотип, Контакты
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

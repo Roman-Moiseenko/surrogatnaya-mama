@@ -12,6 +12,8 @@
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
+
+            ssss
 		    &copy;2015 <a href="<?php echo home_url();?>" title="<?php bloginfo('description');?>"><?php bloginfo('name');?></a>. All Right Reserved.</a> 
 			
 					<?php if (is_home() || is_category() || is_archive() ){ ?>

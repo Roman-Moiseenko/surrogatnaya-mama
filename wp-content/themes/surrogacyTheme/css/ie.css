@@ -50,7 +50,7 @@ img[class*="attachment-"] {
 }
 .site-content {
 	float: left;
-	width: 65.104166667%;
+	width: 100%;
 }
 body.template-front-page .site-content,
 body.attachment .site-content,

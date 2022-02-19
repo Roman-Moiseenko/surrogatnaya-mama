@@ -1,14 +1,14 @@
 /*
-Theme Name: BadJohnny
+Theme Name: SurrogacyTheme
 Theme URI: http://www.themevan.com/item/badjohnny
 Author: ThemeVan
-Author URI: http://www.themevan.com
+Author URI: http://www.koenigs.ru
 Description:  This theme is a redesigned version of Twenty Twelve theme which is created by the WordPress team.
 Version: 10.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Text Domain: badjohnny
+Text Domain: SurrogacyTheme
 
 
 This theme is modified from Twenty Twelve theme which is created by the WordPress team.
@@ -422,6 +422,21 @@ img.wp-smiley,
 }
 
 /* Navigation */
+
+hgroup {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+nav {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
 .site-content nav {
 	clear: both;
 	line-height: 2;
@@ -476,7 +491,6 @@ img.wp-smiley,
 .author.archive .author-info {
 	border-top: 0;
 	margin: 0 0 48px;
-	margin: 0 0 3.428571429rem;
 }
 .author.archive .author-avatar {
 	margin-top: 0;
@@ -492,10 +506,11 @@ html {
 }
 body {
 	font-size: 14px;
-	font-size: 1.4rem;
+
 	font-family: 'Merriweather',Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
-	color: #444;
+	color: var(--text-color);
+	background: var(--main-color);
 }
 body.custom-font-enabled {
 	font-family: "Sorts Mill Goudy",Geneva,Verdana,sans-serif;
@@ -535,7 +550,7 @@ a:hover {
 .site {
 	padding: 0 24px;
 	padding: 0 1.714285714rem;
-	background-color: #fff;
+	/*background-color: #fff;*/
 }
 .site-content {
 	margin: 24px 0 0;
@@ -548,11 +563,11 @@ a:hover {
 
 /* Header */
 .site-header {
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
+	padding-top: 6px;
+	background: var(--one-color);
 }
 .site-header hgroup{
-	margin:40px auto;
+	margin:20px auto;
 }
 .site-header h1,
 .site-header h2 {
@@ -586,9 +601,12 @@ a:hover {
 
 /* Navigation Menu */
 .main-navigation {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
-	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+
+	/*margin-top: 24px;
+	text-align: center;*/
 }
 .main-navigation li {
 	margin-top: 24px;
@@ -613,6 +631,16 @@ a:hover {
 	display: inline-block;
 }
 
+.menu-item>a {
+	background: var(--two-color);
+	border-radius: 30px;
+	padding: 8px 30px 8px 30px;
+	color: var(--main-color) !important;
+	margin-bottom: 8px;
+}
+.menu-item>a:hover {
+	color: var(--text-color) !important;
+}
 /* Banner */
 section[role="banner"] {
 	margin-bottom: 48px;
@@ -673,8 +701,14 @@ section[role="banner"] {
 }
 
 /* Footer */
+footer {
+	background: var(--two-color);
+	color: white;
+	min-height: 200px;
+}
+
 footer[role="contentinfo"] {
-	border-top: 1px solid #ededed;
+	/*border-top: 1px solid #ededed;
 	clear: both;
 	font-size: 13px;
 	font-size: 0.957142857rem;
@@ -688,7 +722,7 @@ footer[role="contentinfo"] {
 	text-align: center;
 	padding: 24px 0;
 	padding: 1.714285714rem 0;
-	color:#999;
+	color:#999;*/
 }
 footer[role="contentinfo"] a {
 	color: #999;
@@ -1548,12 +1582,15 @@ img#wpstats {
 	}
 	.site {
 		margin: 0 auto;
-		max-width: 960px;
-		max-width: 68.571428571rem;
+		/*max-width: 960px;
+		max-width: 68.571428571rem;*/
 		overflow: hidden;
 	}
 	.site-content {
 		float: left;
+		width: 100%;
+	}
+	.site-content.content-blog {
 		width: 65.104166667%;
 	}
 	.site-content.single-column{
@@ -1593,8 +1630,8 @@ img#wpstats {
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-		border-bottom: 1px solid #ededed;
-		border-top: 1px solid #ededed;
+		/*border-bottom: 1px solid #ededed;
+		border-top: 1px solid #ededed;*/
 		display: inline-block !important;
 		text-align: center;
 		width: 100%;
@@ -1611,7 +1648,7 @@ img#wpstats {
 	.main-navigation li a {
 		border-bottom: 0;
 		color: #6a6a6a;
-		line-height: 3.692307692;
+/*		line-height: 3.692307692;*/
 		text-transform: uppercase;
 		white-space: nowrap;
 		font-size:1rem;
@@ -1621,8 +1658,7 @@ img#wpstats {
 		color: #000;
 	}
 	.main-navigation li {
-		margin: 0 40px 0 0;
-		margin: 0 2.857142857rem 0 0;
+		margin: 0 20px 0 0;
 		position: relative;
 	}
 	.main-navigation li ul {
