@@ -33,10 +33,15 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header top-header" role="banner">
 		<hgroup>
             <div>Логотип</div>
-            <div>Контакты</div>
+            <div> (Phone) <?= get_option('number_of_main_phone')?>
+
+                <a href="https://wa.me/<?= get_option('whatsapp_phone')?>" rel="nofollow" target="_blank">WhatsApp</a>
+                <a href="<?= get_option('link_facebook')?>" rel="nofollow" target="_blank">Fb</a>
+                <a href="<?= get_option('link_instagram')?>" rel="nofollow" target="_blank">Inst</a>
+            </div>
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

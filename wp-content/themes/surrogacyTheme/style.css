@@ -421,7 +421,9 @@ img.wp-smiley,
 .section-width {
 	max-width: var(--max-width-section);
 }
-
+.wrapper {
+    margin-top: 104px;
+}
 hgroup {
 	margin: 0 auto;
 	padding: 0 15px;
@@ -436,6 +438,11 @@ nav {
 	padding: 0 15px;
 }
 
+.top-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .site-content nav {
 	clear: both;
 	line-height: 2;

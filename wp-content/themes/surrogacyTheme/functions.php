@@ -663,3 +663,123 @@ class Get_link3 {
         return '<!--link error-->';
     }
 }
+
+
+class ContactsSurrogatePage {
+    public $page_slug;
+    public $option_group;
+
+    public function __construct()
+    {
+        $this->page_slug = 'contacts_surrogate';
+        $this->option_group = 'contacts_surrogate_settings';
+        add_action( 'admin_menu', array( $this, 'add' ), 25 );
+        add_action( 'admin_init', array( $this, 'settings' ) );
+        add_action( 'admin_notices', array( $this, 'notice' ) );
+    }
+    function add()
+    {
+        add_submenu_page(
+                'options-general.php',
+                'Настройки контактов',
+                'Контакты',
+                'manage_options',
+                $this->page_slug,
+                array( $this, 'display' )
+        );
+    }
+    function display(){
+        echo '<div class="wrap">
+			<h1>' . get_admin_page_title() . '</h1>
+			<form method="post" action="options.php">';
+
+        settings_fields( $this->option_group );
+        do_settings_sections( $this->page_slug );
+        submit_button();
+
+        echo '</form></div>';
+    }
+
+    function settings(){
+
+        register_setting( $this->option_group, 'number_of_main_phone', '' );
+        add_settings_section( 'number_of_main_phone_id', '', '', $this->page_slug );
+        add_settings_field(
+            'number_of_main_phone',
+            'Главный телефон в шапке',
+            array( $this, 'field' ),
+            $this->page_slug,
+            'number_of_main_phone_id',
+            array(
+                'label_for' => 'number_of_main_phone',
+                'class' => 'my-fields-class',
+                'name' => 'number_of_main_phone',
+            )
+        );
+
+        register_setting( $this->option_group, 'link_instagram', '' );
+        add_settings_section( 'link_instagram_id', '', '', $this->page_slug );
+        add_settings_field(
+            'link_instagram',
+            'Ссылка на инстаграм',
+            array( $this, 'field' ),
+            $this->page_slug,
+            'link_instagram_id',
+            array(
+                'label_for' => 'link_instagram',
+                'class' => 'my-fields-class',
+                'name' => 'link_instagram',
+            )
+        );
+
+        register_setting( $this->option_group, 'link_facebook', '' );
+        add_settings_section( 'link_facebook_id', '', '', $this->page_slug );
+        add_settings_field(
+            'link_facebook',
+            'Ссылка на фейсбук',
+            array( $this, 'field' ),
+            $this->page_slug,
+            'link_facebook_id',
+            array(
+                'label_for' => 'link_facebook',
+                'class' => 'my-fields-class',
+                'name' => 'link_facebook',
+            )
+        );
+
+        register_setting( $this->option_group, 'whatsapp_phone', '' );
+        add_settings_section( 'whatsapp_phone_id', '', '', $this->page_slug );
+        add_settings_field(
+            'whatsapp_phone',
+            'WhatsApp Телефон (только цифры)',
+            array( $this, 'field' ),
+            $this->page_slug,
+            'whatsapp_phone_id',
+            array(
+                'label_for' => 'whatsapp_phone',
+                'class' => 'my-fields-class',
+                'name' => 'whatsapp_phone',
+            )
+        );
+
+    }
+    function field( $args ){
+        // получаем значение из базы данных
+        $value = get_option( $args[ 'name' ] );
+
+        printf(
+            '<input type="text" id="%s" name="%s" value="%s" />',
+            esc_attr( $args[ 'name' ] ),
+            esc_attr( $args[ 'name' ] ),
+             $value
+        );
+
+    }
+
+    function notice() {
+
+    }
+}
+new ContactsSurrogatePage();
+
+
