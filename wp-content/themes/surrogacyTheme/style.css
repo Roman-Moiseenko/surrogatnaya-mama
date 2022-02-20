@@ -420,7 +420,30 @@ img.wp-smiley,
 
 .section-width {
 	max-width: var(--max-width-section);
+	display: flex;
+	margin: 0 auto !important;
 }
+
+
+section {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+section > div {
+	max-width: var(--max-width-section);
+	display: block;
+	margin: 0 auto !important;
+}
+
+section.white-section {
+	background: white !important;
+}
+
+section.one-color-section {
+	background: var(--one-color) !important;
+}
+
 .wrapper {
     margin-top: 104px;
 }
@@ -701,6 +724,7 @@ section[role="banner"] {
 
 /* Footer */
 footer {
+	text-align: center;
 	background: var(--two-color);
 	color: white;
 	min-height: 200px;
