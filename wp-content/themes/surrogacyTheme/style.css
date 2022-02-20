@@ -63,7 +63,8 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 	--one-color: #F7C7B1;
 	--two-color: #8678B3;
 	--text-color: #333333;
-	--invisible-color: #666666
+	--invisible-color: #666666;
+	--max-width-section: 1290px;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -377,7 +378,6 @@ img.wp-post-image {
 .entry-caption {
 	font-style: italic;
 	font-size: 12px;
-	font-size: 0.857142857rem;
 	line-height: 2;
 	color: #757575;
 }
@@ -418,19 +418,23 @@ img.wp-smiley,
 
 /* Navigation */
 
+.section-width {
+	max-width: var(--max-width-section);
+}
+
 hgroup {
-	max-width: 1290px;
 	margin: 0 auto;
 	padding: 0 15px;
-
+	max-width: var(--max-width-section);
+	justify-content: space-between;
+	display: flex;
 }
 
 nav {
-	max-width: 1290px;
+	max-width: var(--max-width-section);
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
 
 .site-content nav {
 	clear: both;
@@ -439,7 +443,6 @@ nav {
 }
 #nav-above {
 	padding: 24px 0;
-	padding: 1.714285714rem 0;
 }
 #nav-above {
 	display: none;
@@ -461,26 +464,21 @@ nav {
 .nav-single + .comments-area,
 #comment-nav-above {
 	margin: 48px 0;
-	margin: 1.2rem 0 3.428571429rem;
 }
 
 /* Author profiles */
 .author .archive-header {
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 }
 .author-info {
 	border-top: 1px solid #ededed;
 	margin: 24px 0;
-	margin: 1.714285714rem 0;
 	padding-top: 24px;
-	padding-top: 1.714285714rem;
 	overflow: hidden;
 }
 .author-description p {
 	color: #757575;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 }
 .author.archive .author-info {
@@ -544,16 +542,12 @@ a:hover {
 /* Page structure */
 .site {
 	padding: 0 24px;
-	padding: 0 1.714285714rem;
-	/*background-color: #fff;*/
 }
 .site-content {
 	margin: 24px 0 0;
-	margin: 1.714285714rem 0 0;
 }
 .widget-area {
 	margin: 24px 0 0;
-	margin: 1.714285714rem 0 0;
 }
 
 /* Header */
@@ -1486,7 +1480,6 @@ a.comment-edit-link:hover {
 .template-front-page .widget-area .widget_text img {
 	float: left;
 	margin: 8px 24px 8px 0;
-	margin: 0.571428571rem 1.714285714rem 0.571428571rem 0;
 }
 
 
@@ -1495,25 +1488,20 @@ a.comment-edit-link:hover {
 
 .widget-area .widget ul ul {
 	margin-left: 12px;
-	margin-left: 0.857142857rem;
 }
 .widget_rss li {
 	margin: 12px 0;
-	margin: 0.857142857rem 0;
 }
 .widget_recent_entries .post-date,
 .widget_rss .rss-date {
 	color: #aaa;
 	font-size: 11px;
-	font-size: 0.785714286rem;
 	margin-left: 12px;
-	margin-left: 0.857142857rem;
 }
 #wp-calendar {
 	margin: 0;
 	width: 100%;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #686868;
 }
@@ -1524,13 +1512,11 @@ a.comment-edit-link:hover {
 }
 #wp-calendar #next {
 	padding-right: 24px;
-	padding-right: 1.714285714rem;
 	text-align: right;
 }
 .widget_search label {
 	display: block;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 }
 .widget_twitter li {
@@ -1548,18 +1534,12 @@ a.comment-edit-link:hover {
 img#wpstats {
 	display: block;
 	margin: 0 auto 24px;
-	margin: 0 auto 1.714285714rem;
 }
 
 
 /* =Media queries
 -------------------------------------------------------------- */
 
-/* Does the same thing as <meta name="viewport" content="width=device-width">,
- * but in the future W3C standard way. -ms- prefix is required for IE10+ to
- * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
- * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
- */
 @-ms-viewport {
 	width: device-width;
 }
@@ -1572,7 +1552,6 @@ img#wpstats {
 	.author-avatar {
 		float: left;
 		margin-top: 8px;
-		margin-top: 0.571428571rem;
 	}
 	.author-description {
 		float: right;
@@ -1580,8 +1559,6 @@ img#wpstats {
 	}
 	.site {
 		margin: 0 auto;
-		/*max-width: 960px;
-		max-width: 68.571428571rem;*/
 		overflow: hidden;
 	}
 	.site-content {
@@ -1613,7 +1590,6 @@ img#wpstats {
 	.site-header h1,
 	.site-header h3 {
 		font-size: 40px;
-		font-size: 4.857142857rem;
 		font-weight: normal;
 		line-height: 1.846153846;
 		margin-bottom: -20px;
@@ -1628,8 +1604,6 @@ img#wpstats {
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-		/*border-bottom: 1px solid #ededed;
-		border-top: 1px solid #ededed;*/
 		display: inline-block !important;
 		text-align: center;
 		width: 100%;
@@ -1646,7 +1620,6 @@ img#wpstats {
 	.main-navigation li a {
 		border-bottom: 0;
 		color: #6a6a6a;
-/*		line-height: 3.692307692;*/
 		text-transform: uppercase;
 		white-space: nowrap;
 		font-size:1rem;
@@ -1656,7 +1629,7 @@ img#wpstats {
 		color: #000;
 	}
 	.main-navigation li {
-		margin: 0 20px 0 0;
+		margin: 0;
 		position: relative;
 	}
 	.main-navigation li ul {
@@ -1688,12 +1661,9 @@ img#wpstats {
 		border-bottom: 1px solid #ededed;
 		display: block;
 		font-size: 11px;
-		font-size: 0.785714286rem;
 		line-height: 2.181818182;
 		padding: 8px 10px;
-		padding: 0.571428571rem 0.714285714rem;
 		width: 180px;
-		width: 12.85714286rem;
 		white-space: normal;
 	}
 	.main-navigation li ul li a:hover,
@@ -1713,10 +1683,8 @@ img#wpstats {
 	}
 	.entry-header .entry-title {
 		font-size: 26px;
-		font-size: 2.671428571rem;
 		text-align: center;
 		font-weight:bold;
-		text-align: center;
 	}
 
 	#respond form input[type="text"] {
@@ -1743,7 +1711,6 @@ img#wpstats {
 		float: left;
 		width: 51.875%;
 		margin-bottom: 24px;
-		margin-bottom: 1.714285714rem;
 	}
 	.template-front-page .widget-area .widget:nth-child(odd) {
 		clear: right;
@@ -1753,7 +1720,6 @@ img#wpstats {
 		float: right;
 		width: 39.0625%;
 		margin: 0 0 24px;
-		margin: 0 0 1.714285714rem;
 	}
 	.template-front-page.two-sidebars .widget,
 	.template-front-page.two-sidebars .widget:nth-child(even) {
@@ -1762,7 +1728,6 @@ img#wpstats {
 	}
 	.commentlist .children {
 		margin-left: 48px;
-		margin-left: 3.428571429rem;
 	}
 }
 
@@ -1771,11 +1736,8 @@ img#wpstats {
 	
 	body .site {
 		padding: 0 40px;
-		padding: 0 2.857142857rem;
 		margin-top: 48px;
-		margin-top: 3.428571429rem;
 		margin-bottom: 48px;
-		margin-bottom: 3.428571429rem;
 		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 	}
 	body.custom-background-empty {
@@ -1823,7 +1785,6 @@ img#wpstats {
 	}
 	.site-header {
 		margin-bottom: 72px;
-		margin-bottom: 5.142857143rem;
 		text-align: center;
 	}
 	.site-header h1,.site-header h3{
@@ -1893,6 +1854,5 @@ img#wpstats {
 	.comments-area article header cite,
 	.comments-area article header time {
 		margin-left: 50px;
-		margin-left: 3.57142857rem;
 	}
 }
