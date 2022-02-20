@@ -696,6 +696,8 @@ section[role="banner"] {
 	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
 }
 
+
+
 /* Footer */
 footer {
 	background: var(--two-color);
