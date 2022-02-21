@@ -38,7 +38,7 @@
             <div>Логотип</div>
             <div> (Phone) <?= get_option('number_of_main_phone') ?>
 
-                <a href="https://wa.me/<?= get_option('whatsapp_phone') ?>" rel="nofollow" target="_blank">WhatsApp</a>
+                <a href="https://wa.me/<?= get_option('whatsapp_phone') ?>" rel="nofollow" target="_blank"><img src="/images/whatsapp_50.png"></a>
                 <a href="<?= get_option('link_facebook') ?>" rel="nofollow" target="_blank">Fb</a>
                 <a href="<?= get_option('link_instagram') ?>" rel="nofollow" target="_blank">Inst</a>
             </div>
