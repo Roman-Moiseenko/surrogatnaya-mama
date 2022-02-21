@@ -540,10 +540,12 @@ nav {
 .align-center-div {
 	text-align: center
 }
-
+.wpcf7-form-control-wrap {
+	position: unset !important;
+}
 .input-field {
 	font-size: 16px;
-	height: 24px;
+	min-height: 24px;
 	border-radius: 15px;
 	border-width: 2px;
 	border-color: var(--two-color) !important;
@@ -551,7 +553,6 @@ nav {
 	margin-top: 6px;
 	margin-bottom: 6px;
 	z-index: -1;
-
 }
 
 .input-field-subscribe {
@@ -1085,11 +1086,9 @@ img.aligncenter,
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
-	border-bottom: 1px solid #ededed;
-	margin-bottom: 72px;
-	margin-bottom: 5.142857143rem;
-	padding-bottom: 24px;
-	padding-bottom: 1.714285714rem;
+
+	margin-bottom: 24px;
+	padding-bottom: 6px;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
