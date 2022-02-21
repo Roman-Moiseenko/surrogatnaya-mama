@@ -35,20 +35,21 @@
 <div id="page" class="hfeed site">
     <header id="masthead" class="site-header top-header" role="banner">
         <hgroup>
-            <div><img src="/wp-content/themes/surrogacyTheme/images/logo_full.png" width="50" height="29"></div>
-            <div>
-                <a href="tel:<?= get_option('number_of_main_phone') ?>" rel="nofollow" target="_blank">
-                <img src="/wp-content/themes/surrogacyTheme/images/phone_50.png" width="29" height="29">
-                    <span style="font-size: 26px; color: #333; margin: auto 2px">
+            <div class="top-header-logo"><img src="/wp-content/themes/surrogacyTheme/images/logo_full.png" width="244" height="50"></div>
+            <div class="top-header-contact">
+                <img class="top-header-contact-middle" src="/wp-content/themes/surrogacyTheme/images/phone_50.png" width="29" height="29">
+                <a class="top-header-contact-middle" href="tel:<?= get_option('number_of_main_phone') ?>" rel="nofollow" target="_blank">
+
+                    <span class="top-header-contact-phone">
                     <?= get_option('number_of_main_phone') ?>
                         </span>
                 </a>
-                <a href="https://wa.me/<?= get_option('whatsapp_phone') ?>" rel="nofollow" target="_blank">
+                <a class="top-header-contact-middle" href="https://wa.me/<?= get_option('whatsapp_phone') ?>" rel="nofollow" target="_blank">
                     <img src="/wp-content/themes/surrogacyTheme/images/whatsapp_50.png" width="29" height="29"></a>
-                <a href="<?= get_option('link_facebook') ?>" rel="nofollow" target="_blank">
+                <a class="top-header-contact-middle" href="<?= get_option('link_facebook') ?>" rel="nofollow" target="_blank">
                     <img src="/wp-content/themes/surrogacyTheme/images/facebook_50.png" width="29" height="29">
                 </a>
-                <a href="<?= get_option('link_instagram') ?>" rel="nofollow" target="_blank">
+                <a class="top-header-contact-middle" href="<?= get_option('link_instagram') ?>" rel="nofollow" target="_blank">
                     <img src="/wp-content/themes/surrogacyTheme/images/instagram_50.png" width="29" height="29">
                 </a>
             </div>
