@@ -359,7 +359,6 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
-.entry-content img,
 .comment-content img,
 .widget img,
 img.header-image,
@@ -528,8 +527,7 @@ html {
 	font-size: 87.5%;
 }
 body {
-	font-size: 14px;
-
+	font-size: 16px;
 	font-family: 'Merriweather',Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 	color: var(--text-color);
@@ -573,9 +571,7 @@ a:hover {
 .site {
 	padding: 0 24px;
 }
-.site-content {
-	margin: 24px 0 0;
-}
+
 .widget-area {
 	margin: 24px 0 0;
 }
@@ -602,21 +598,17 @@ a:hover {
 }
 .site-header h1 {
 	font-size: 24px;
-	font-size: 1.714285714rem;
 	line-height: 1.285714286;
 	margin-bottom: 14px;
-	margin-bottom: 1rem;
 }
 .site-header h2 {
 	font-weight: normal;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
 }
 .header-image {
 	margin-top: 24px;
-	margin-top: 1.714285714rem;
 }
 
 /* Navigation Menu */
@@ -624,15 +616,10 @@ a:hover {
 	align-items: center;
 	justify-content: space-between;
 	display: flex;
-
-	/*margin-top: 24px;
-	text-align: center;*/
 }
 .main-navigation li {
 	margin-top: 24px;
-	margin-top: 1.714285714rem;
 	font-size: 12px;
-	font-size: 0.857142857rem;
 	line-height: 1.42857143;
 }
 .main-navigation a {
@@ -664,7 +651,6 @@ a:hover {
 /* Banner */
 section[role="banner"] {
 	margin-bottom: 48px;
-	margin-bottom: 3.428571429rem;
 }
 
 /* Sidebar */
@@ -673,23 +659,19 @@ section[role="banner"] {
 	-moz-hyphens: auto;
 	hyphens: auto;
 	margin-bottom: 48px;
-	margin-bottom: 3.428571429rem;
 	word-wrap: break-word;
 }
 .widget-area .widget h3 {
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 }
 .widget-area .widget p,
 .widget-area .widget li,
 .widget-area .widget .textwidget {
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 }
 .widget-area .widget p {
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 }
 .widget-area .widget ul{
 	margin-left:8px;
@@ -701,11 +683,9 @@ section[role="banner"] {
 .widget-area .textwidget ul {
 	list-style: disc outside;
 	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
 }
 .widget-area .textwidget li {
 	margin-left: 36px;
-	margin-left: 2.571428571rem;
 }
 .widget-area .widget a {
 	color: #757575;
@@ -758,11 +738,14 @@ footer[role="contentinfo"] a:hover {
 /* =Main content and comment content
 -------------------------------------------------------------- */
 
+.my-style-rounded {
+	border-radius: 20px;
+}
+
 header .entry-meta {
 	clear: both;
 	text-align: center;
 	font-size:12px;
-	font-size:1rem;
 	margin:10px auto 50px;
 }
 .entry-meta,
@@ -771,16 +754,13 @@ header .entry-meta {
 }
 .entry-header {
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 }
 .entry-header img.wp-post-image {
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 }
 .entry-header .entry-title,
 .entry-title {
 	font-size: 22px;
-	font-size: 1.528571429rem;
 	line-height: 1.2;
 	font-weight: normal;
 	text-align: center;
@@ -792,14 +772,11 @@ header .entry-meta {
 }
 .entry-header .entry-format {
 	margin-top: 24px;
-	margin-top: 1.714285714rem;
 	font-weight: normal;
 }
 .entry-header .comments-link {
 	margin-top: 15px;
-	margin-top: 0.714285714rem;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
 	text-align: center;
@@ -1403,7 +1380,6 @@ a.comment-reply-link,
 a.comment-edit-link {
 	color: #686868;
 	font-size: 13px;
-	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 }
 a.comment-reply-link:hover,
@@ -1413,39 +1389,30 @@ a.comment-edit-link:hover {
 .commentlist .pingback {
 	line-height: 1.714285714;
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 }
 
 /* Comment form */
 #respond {
 	margin-top: 48px;
-	margin-top: 3.428571429rem;
 }
 #respond h3#reply-title {
 	font-size: 16px;
-	font-size: 2rem;
 	line-height: 1.5;
 }
 #respond h3#reply-title #cancel-comment-reply-link {
 	margin-left: 10px;
-	margin-left: 0.714285714rem;
 	font-weight: normal;
 	font-size: 12px;
-	font-size: 0.857142857rem;
 }
 #respond form {
 	margin: 24px 0;
-	margin: 1.714285714rem 0;
 }
 #respond form p {
 	margin: 11px 0;
-	margin: 0.785714286rem 0;
 }
 #respond form p.logged-in-as {
 	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
 	font-size:14px;
-	font-size:1.2rem;
 }
 #respond form label {
 	display: block;
@@ -1456,10 +1423,8 @@ a.comment-edit-link:hover {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 12px;
-	font-size: 0.857142857rem;
 	line-height: 1.714285714;
 	padding: 10px;
-	padding: 0.714285714rem;
 	width: 100%;
 }
 #respond form p.form-allowed-tags {
@@ -1577,6 +1542,7 @@ img#wpstats {
 @viewport {
 	width: device-width;
 }
+
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {

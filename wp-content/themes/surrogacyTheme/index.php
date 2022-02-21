@@ -27,11 +27,11 @@ get_header(); ?>
 				// Show a different message to a logged-in user who can add posts.
 			?>
 				<header class="entry-header">
-					<h2 class="entry-title"><?php _e( 'No posts to display', 'badjohnny' ); ?></h2>
+					<h2 class="entry-title"><?php _e( 'No posts to display' ); ?></h2>
 				</header>
 
 				<div class="entry-content">
-					<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'badjohnny' ), admin_url( 'post-new.php' ) ); ?></p>
+					<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.'), admin_url( 'post-new.php' ) ); ?></p>
 				</div><!-- .entry-content -->
 
 			<?php else :
@@ -42,7 +42,7 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'badjohnny' ); ?></p>
+					<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.' ); ?></p>
 					<?php get_search_form(); ?>
 				</div><!-- .entry-content -->
 			<?php endif; // end current_user_can() check ?>
