@@ -583,7 +583,7 @@ a:hover {
 	background: var(--one-color);
 }
 .site-header hgroup{
-	margin:20px auto;
+	margin:0 auto;
 }
 .site-header h1,
 .site-header h2 {
