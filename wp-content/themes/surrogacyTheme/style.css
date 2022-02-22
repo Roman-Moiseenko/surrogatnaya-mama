@@ -1863,3 +1863,32 @@ img#wpstats {
 		margin-left: 50px;
 	}
 }
+
+/** ФОРУМ bb **/
+#bbp_search_submit {
+	padding: 10px 20px !important;
+	font-size: 14px !important;
+
+}
+
+.bbpress-wrapper {
+	max-width: var(--max-width-section);
+	display: block;
+	margin: 20px auto !important;
+}
+
+#bbp_search {
+	font-size: 14px;
+	min-height: 20px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: var(--two-color) !important;
+	color: var(--text-color);
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.cf7sr-g-recaptcha {
+	display: block;
+	margin: 20px auto !important;
+}
