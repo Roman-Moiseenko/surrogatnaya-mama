@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Functions of the Default template-pack
+ * Functions of the Surrogacy template-pack
  *
  * @package bbPress
  * @subpackage BBP_Theme_Compat
@@ -13,10 +13,10 @@ defined( 'ABSPATH' ) || exit;
 
 /** Theme Setup ***************************************************************/
 
-if ( ! class_exists( 'BBP_Default' ) ) :
+if ( ! class_exists( 'BBP_Surrogacy' ) ) :
 
 /**
- * Loads bbPress Default Theme functionality
+ * Loads bbPress Surrogacy Theme functionality
  *
  * This is not a real theme by WordPress standards, and is instead used as the
  * fallback for any WordPress theme that does not have bbPress templates in it.
@@ -32,24 +32,24 @@ if ( ! class_exists( 'BBP_Default' ) ) :
  * @package bbPress
  * @subpackage BBP_Theme_Compat
  */
-class BBP_Default extends BBP_Theme_Compat {
+class BBP_Surrogacy extends BBP_Theme_Compat {
 
 	/** Functions *************************************************************/
 
 	/**
-	 * The main bbPress (Default) Loader
+	 * The main bbPress (Surrogacy) Loader
 	 *
 	 * @since 2.1.0 bbPress (r3732)
 	 */
 	public function __construct( $properties = array() ) {
 
 		parent::__construct( bbp_parse_args( $properties, array(
-			'id'      => 'default',
-			'name'    => 'bbPress Default',
+			'id'      => 'surrogacy',
+			'name'    => 'bbPress Surrogacy',
 			'version' => bbp_get_asset_version(),
-			'dir'     => trailingslashit( bbpress()->themes_dir . 'default' ),
-			'url'     => trailingslashit( bbpress()->themes_url . 'default' ),
-		), 'default_theme' ) );
+			'dir'     => trailingslashit( bbpress()->themes_dir . 'surrogacy' ),
+			'url'     => trailingslashit( bbpress()->themes_url . 'surrogacy' ),
+		), 'surrogacy_theme' ) );
 
 		$this->setup_actions();
 	}
@@ -352,5 +352,5 @@ class BBP_Default extends BBP_Theme_Compat {
 		bbp_ajax_response( true, bbp_get_user_subscribe_link( $attrs, $user_id, false ), 200 );
 	}
 }
-new BBP_Default();
+new BBP_Surrogacy();
 endif;
