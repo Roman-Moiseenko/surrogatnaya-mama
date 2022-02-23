@@ -1889,6 +1889,6 @@ img#wpstats {
 }
 
 .cf7sr-g-recaptcha {
-	display: block;
+	display: inline-flex;
 	margin: 20px auto !important;
 }
