@@ -30,7 +30,6 @@
         &copy;2022<?= (date('Y', time()) == '2022') ? '' : '-' . (date('Y', time())) ?> <a
                 href="<?php echo home_url(); ?>"
                 title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a>. All Right Reserved.</a>
-
         <?php if ($user_ID) : ?><?php else : ?>
             <?php if (is_single() || is_page()) { ?>
                 <?php $lib_path = dirname(__FILE__) . '/';
