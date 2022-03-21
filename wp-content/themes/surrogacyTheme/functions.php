@@ -717,6 +717,21 @@ class ContactsSurrogatePage {
             )
         );
 
+        register_setting( $this->option_group, 'link_vk', '' );
+        add_settings_section( 'link_vk_id', '', '', $this->page_slug );
+        add_settings_field(
+            'link_vk',
+            'Ссылка на Вконтакте',
+            array( $this, 'field' ),
+            $this->page_slug,
+            'link_vk_id',
+            array(
+                'label_for' => 'link_vk',
+                'class' => 'my-fields-class',
+                'name' => 'link_vk',
+            )
+        );
+
         register_setting( $this->option_group, 'link_instagram', '' );
         add_settings_section( 'link_instagram_id', '', '', $this->page_slug );
         add_settings_field(
@@ -759,6 +774,21 @@ class ContactsSurrogatePage {
                 'label_for' => 'whatsapp_phone',
                 'class' => 'my-fields-class',
                 'name' => 'whatsapp_phone',
+            )
+        );
+
+        register_setting( $this->option_group, 'main_email', '' );
+        add_settings_section( 'main_email_id', '', '', $this->page_slug );
+        add_settings_field(
+            'main_email',
+            'Главный email',
+            array( $this, 'field' ),
+            $this->page_slug,
+            'main_email_id',
+            array(
+                'label_for' => 'main_email',
+                'class' => 'my-fields-class',
+                'name' => 'main_email',
             )
         );
 

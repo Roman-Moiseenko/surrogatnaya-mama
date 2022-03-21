@@ -34,12 +34,12 @@
                 </a>
                 <a class="top-header-contact-middle" href="https://wa.me/<?= get_option('whatsapp_phone') ?>" rel="nofollow" target="_blank">
                     <img src="/wp-content/themes/surrogacyTheme/images/whatsapp_50.png" width="29" height="29"></a>
-                <a class="top-header-contact-middle" href="<?= get_option('link_facebook') ?>" rel="nofollow" target="_blank">
+                <!--a class="top-header-contact-middle" href="<?= get_option('link_facebook') ?>" rel="nofollow" target="_blank">
                     <img src="/wp-content/themes/surrogacyTheme/images/facebook_50.png" width="29" height="29">
                 </a>
                 <a class="top-header-contact-middle" href="<?= get_option('link_instagram') ?>" rel="nofollow" target="_blank">
                     <img src="/wp-content/themes/surrogacyTheme/images/instagram_50.png" width="29" height="29">
-                </a>
+                </a-->
             </div>
         </hgroup>
 
