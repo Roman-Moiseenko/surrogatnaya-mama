@@ -5,7 +5,7 @@
  * @subpackage BadJohnny
  * @since BadJohnny 1.0
  */
-
+///Страница Блога - Каталог статей !!!!!!
 get_header(); ?>
 
 	<div id="primary" class="site-content content-blog">

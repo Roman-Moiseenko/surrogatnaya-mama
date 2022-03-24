@@ -8,6 +8,8 @@
  * @subpackage BadJohnny
  * @since BadJohnny 1.0
  */
+
+//Страница блога-поста
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -30,7 +32,7 @@
         <?php endif; // is_single() ?>
 
         <div class="entry-meta">
-            <?php badjohnny_entry_meta(); ?>
+            <?php //badjohnny_entry_meta(); ?>
         </div>
     </header><!-- .entry-header -->
 
@@ -54,8 +56,9 @@
             <?php wp_link_pages(array('before' => '<div class="page-links">' . __('Pages:', 'badjohnny'), 'after' => '</div>')); ?>
         </div><!-- .entry-content -->
     <?php endif; ?>
-
-    <footer class="entry-meta">
+    <p class="tags-blog"><?php TagsView(); ?></p>
+    <!-- Footer -->
+    <div class="entry-meta" style="padding-top: 24px">
         <?php if (comments_open()) : ?>
             <div class="comments-link">
                 <?php comments_popup_link('<span class="leave-reply">' . __('Leave a reply', 'badjohnny') . '</span>', __('1 Reply', 'badjohnny'), __('% Replies', 'badjohnny')); ?>
@@ -82,5 +85,5 @@
                 </div><!-- .author-description -->
             </div><!-- .author-info -->
         <?php endif; ?>
-    </footer><!-- .entry-meta -->
+    </div><!-- .entry-meta -->
 </article><!-- #post -->

@@ -8,6 +8,8 @@
  * @subpackage BadJohnny
  * @since BadJohnny 1.0
  */
+
+//Правый сайд бар в Страница блога
 ?>
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
@@ -15,3 +17,5 @@
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div><!-- #secondary -->
 	<?php endif; ?>
+
+

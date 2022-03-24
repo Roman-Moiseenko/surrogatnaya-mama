@@ -11,7 +11,7 @@
  * @subpackage BadJohnny
  * @since BadJohnny 1.0
  */
-
+//page
 get_header(); ?>
 
 	<div id="primary" class="site-content">
